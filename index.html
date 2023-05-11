@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devoir JS</title> 
+</head>
+<body>
+    <div id="slide" class="slidenav">
+        <ul>
+          <li><a href="https://www.nike.com/fr/homme" target="_blank">Nike</a></li>
+          <li><a href="https://www.adidas.fr/?af_channel=Search&af_reengagement_window=30d&c=adidas-Brand_Expanded-B-Exact-ROI&cm_mmc=AdieSEM_Google-_-adidas-Brand_Expanded-B-Exact-ROI-_-website-_-www%20adidas&cm_mmca1=FR&cm_mmca2=e&ds_kid=43700043554000312&gclid=fe19c69433361a21796ca2c8f1efed42&gclsrc=3p.ds&is_retargeting=true&msclkid=fe19c69433361a21796ca2c8f1efed42&pid=googleadwords_temp&utm_campaign=adidas-Brand_Expanded-B-Exact-ROI&utm_content=website&utm_medium=cpc&utm_source=bing&utm_term=www%20adidas" target="_blank">Adidas</a></li>
+          <li><a href="https://www.jdsports.fr/?gclid=add526fffed2163a2d8842a33c296da6&gclsrc=3p.ds&msclkid=add526fffed2163a2d8842a33c296da6&utm_source=bing&utm_medium=cpc&utm_campaign=FR%20%7C%20Brand%20%7C%20BM&utm_term=jd%20sport&utm_content=Brand%20%7C%20jd%20sports%20%7C%20BM" target="_blank">JD Sport</a></li>
+          <li><a href="https://www.footlocker.fr/?gclid=87994e14ab1a1ea4338c2a486854d3d4&gclsrc=3p.ds&msclkid=87994e14ab1a1ea4338c2a486854d3d4&utm_source=bing&utm_medium=cpc&utm_campaign=_1%3Afr_2%3Aperformance_3%3Abing_4%3Ado_5%3Asearch-pure-brand_6%3Aconversion_7%3Amix_8%3Aalways%20on_9%3Ana_10%3Ana&utm_term=Foot%20Locker&utm_content=_1%3Afr_2%3Aperformance_3%3Agoogle_4%3Ado_5%3Asearch-pure-brand_6%3Aconversion_7%3Amix_8%3Apure%20brand_9%3Ana_10%3Ana_16%3A1%20-%20pure%20brand" target="_blank">Foot Locker</a></li>
+        </ul>
+    </div>
+    <img src="/burger_menu.png" class="bm_icon" onclick="openmenu()" id="openbm">
+  
+
+    <div class="container">
+        <button id="btn-darkmode"data-mode="dark">DarkMode</button>
+        <button id="btn-lightmode" data-mode="light">LightMode</button>
+    </div>
+
+    <div>
+     <h4>Générateur de mot de passe :</h4>
+     <button onclick="nvxmdp()">cliquer ici</button>
+     <p id="generation"></p>
+    </div>
+
+    <div>
+     <label for="degre">Celsius:</label>
+     <input type="number" id="degre" name="degre" oninput="convertCelsiusToFahrenheit()">
+     <label for="fahrenheit">Fahrenheit:</label>
+     <span id="fahrenheit"></span>
+    </div>
+    <br>
+    <div>
+      <button id="myBtn">Open Modal Citations</button>
+
+     <div id="myModal" class="modal">
+
+     <div class="modal-content">
+       <p id="modal-texte"></p>
+     </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
